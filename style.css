@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: "Montserrat", sans-serif;
+    background-color:hsl(30, 38%, 92%) ;
+    color:  hsl(228, 12%, 48%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 375px;
+    padding: 2rem 1rem;
+}
+.img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.img2{
+    display: none;
+}
+.container_contenido{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.container_text{
+    padding: 1.4rem;
+}
+.subtt{
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.title{
+    line-height: 1.2;/*espaciado de entre los textos*/
+    font-family: "Fraunces", serif;
+    color: hsl(212, 21%, 14%);
+    padding: 10px 0px;
+    
+}
+.parrafo{
+    line-height: 1.6;
+    padding-top: 5px;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 20px;
+    padding-bottom: 14px;
+
+}
+.p_final{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    color: #3C8469;
+}
+.p_incial{
+    text-decoration: line-through;
+}
+.btn{
+    display: flex;
+    gap: .7rem;
+    justify-content: center;
+    background-color: #3C8469;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.text_btn{
+    font-family: "Montserrat", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.carrito{
+    width: 17px;
+}
+@media (min-width: 768px){
+    body{
+        height: 100vh;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 600px;
+
+    }
+
+    .container_contenido{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+        
+    }
+    .container_img{
+        width: 150%;
+        height: 465px;
+    }
+    .img{
+        display: none;
+    }
+    .img2{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+    }
+    .container_text{
+        padding: 2rem;
+        border-radius: 0 10px 10px 0;
+    }
+    .title{
+        font-size: 2.3rem;
+    }
+}
+
+
+
